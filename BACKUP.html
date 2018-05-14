@@ -8,9 +8,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <!-- Add icon library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -22,24 +19,24 @@
 
 
 <!-- Sidebar/menu -->
-<nav class="navbar w3-sidebar color-light-green w3-collapse w3-top w3-large w3-padding" style="z-index:16;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large closebtn backgroundhover" onclick="closeNav()" style="position: absolute; top: 20px; right: 45px; font-size: 60px;">&times;</a>
+  <nav class="sidenav w3-sidebar color-light-green  w3-top w3-large w3-padding " style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-hide-large closebtn" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
     <h3 class="w3-padding-64"><b>AllXclusive</b></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="#myPage" onclick="w3_close()" class="w3-bar-item backgroundhover">Home</a>
-    <a href="#showcase" onclick="w3_close()" class="w3-bar-item backgroundhover">Showcase</a>
-    <a href="#wiezijnwij" onclick="w3_close()" class="w3-bar-item backgroundhover">Wie zijn wij</a>
-    <a href="#leden" onclick="w3_close()" class="w3-bar-item  backgroundhover">All X Leden</a>
-    <a href="#repertoire" onclick="w3_close()" class="w3-bar-item backgroundhover">Repertoire</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item backgroundhover">Contact</a>
+    <a href="#myPage" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a>
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Wie zijn wij</a>
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Designers</a>
+    <!-- <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a> -->
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
   </div>
 </nav>
 
 <!-- Top menu on small screens -->
-<header class=" navbar w3-container w3-top w3-hide-large color-light-green w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button color-light-green w3-margin-right" onclick="w3_open()">☰</a>
+<header class="w3-container w3-top w3-hide-large color-light-green w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button color-light-green w3-margin-right closebtn" onclick="w3_open()">☰</a>
   <span>LOGO</span>
 </header>
 
@@ -52,7 +49,7 @@
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
     <h1 class="w3-jumbo "><b>AllXclusive</b></h1>
-    <h1 class="w3-xxxlarge text-color-light-green "><b>Showcase</b></h1>
+    <h1 class="w3-xxxlarge text-color-light-green "><b>Showcase.</b></h1>
     <hr style="width:50px;border:5px solid" class="w3-round text-color-light-green">
   </div>
 
@@ -105,21 +102,30 @@
       </a>
     </div>
 
+
+
   <!-- Services -->
-  <div class="w3-container" id="wiezijnwij" style="margin-top:75px">
+  <div class="w3-container" id="services" style="margin-top:75px">
     <h1 class="w3-xxxlarge text-color-light-green"><b>Wie zijn wij</b></h1>
     <hr style="width:50px;border:5px solid #688125" class="w3-round ">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 
+    <p>Wij zijn zes vrouwen die met veel plezier samen close harmony a capella repertoire zingen.</p>
+    <p>Allemaal hebben we al langer ervaring met meerstemmig zingen. Sinds september 2017 zijn we voor ‘voor onszelf’ begonnen in een kleinere bezetting en hebben wij onze eigen vocal group opgericht.
+   We zijn allemaal vrouw, (XX) ieder met een eigen stemgeluid, en samen hebben wij een geheel eigen sound, vandaar de naam “All Xclusive”
+    </p>
   </div>
 
-  <!-- All X leden -->
-  <div class="w3-container" id="leden" style="margin-top:75px">
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
     <h1 class="w3-xxxlarge text-color-light-green"><b>All X leden</b></h1>
     <hr style="width:50px;border:5px solid #688125" class="w3-round">
-    <p>Wij zijn zes vrouwen die met veel plezier samen close harmony a capella repertoire zingen.</p>
-    <p>Allemaal hebben we al langer ervaring met meerstemmig zingen. Sinds september 2017 zijn we voor ‘voor onszelf’ begonnen in een kleinere bezetting en hebben wij onze eigen vocal group opgericht. We zijn allemaal vrouw, (XX) ieder met een eigen stemgeluid, en samen hebben wij een geheel eigen sound, vandaar de naam “All Xclusive” </p>
+    <p>The best team in the world.</p>
+    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p><b>Our members are thoughtfully chosen</b>:</p>
   </div>
 
 
@@ -238,16 +244,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
   <!-- Packages / Pricing Tables -->
 
-  <!-- Contact --> <div class="w3-container" id="repertoire" style="margin-top:75px">
-    <h1 class="w3-xxxlarge text-color-light-green"><b>Repertoire</b></h1>
-    <hr style="width:50px;border:5px solid #688125" class="w3-round ">
-    <p>
-      We zingen lichte muziek; pop-, soul- of jazz, in het engels en in het nederlands. Andere talen en stijlen kunnen er altijd nog bijkomen want wij willen ons repertoire blijven uitbreiden.
-      We hebben ook al een aardig kerstrepertoire opgebouwd dus als de kersttijd er aankomt leveren wij graag onze muzikale kerstbijdrage!
-    </p>
-  </div>
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge text-color-light-green"><b>Contact</b></h1>
+    <hr style="width:50px;border:5px solid #688125" class="w3-round">
     <!-- <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people! -->
-    <!-- <p>Wil je contact met ons opnemen dan kan dat door hieronder een berichtje achter te laten of te mailen naar
+    <p>Wil je contact met ons opnemen dan kan dat door hieronder een berichtje achter te laten of te mailen naar
       <a class="text-color-light-green w3-hover-text-green" href="mailto:info.allxclusive@gmail.com">info.allxclusive@gmail.com</a>.
     </p>
     <form action="/action_page.php" target="_blank">
@@ -265,7 +267,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
       </div>
       <button type="submit" class="w3-button w3-block w3-padding-large color-light-green w3-margin-bottom">Send Message</button>
     </form>
-  </div> -->
+  </div>
 
   <!-- Container (Contact Section) -->
 
@@ -273,9 +275,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     <h1 class="w3-xxxlarge text-color-light-green"><b>Contact</b></h1>
     <hr style="width:50px;border:5px solid #688125" class="w3-round">
     <!-- <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people! -->
-    <p>Als je ons iets wilt vragen (bijvoorbeeld of wij een optreden kunnen verzorgen!) dan kan dat via een bericht hieronder, via de mail of op onze facebookpagina.
-      <!-- Wil je contact met ons opnemen dan kan dat door hieronder een berichtje achter te laten of te mailen naar -->
-      <!-- <a class="text-color-light-green w3-hover-text-green" href="mailto:info.allxclusive@gmail.com">info.allxclusive@gmail.com</a>. -->
+    <p>Wil je contact met ons opnemen dan kan dat door hieronder een berichtje achter te laten of te mailen naar
+      <a class="text-color-light-green w3-hover-text-green" href="mailto:info.allxclusive@gmail.com">info.allxclusive@gmail.com</a>.
     </p>
 
     <div class="row">
@@ -298,44 +299,22 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         <br>
         <div class="row">
           <div class="col-md-12 form-group">
-            <button class="btn pull-right" type="submit" disabled>Send  Not working yet</button>
+            <button class="btn pull-right" type="submit">Send</button>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+
+
 
 
 
 <!-- End page content -->
 </div>
-<!-- facebook  -->
-<div id="fb-root"></div>
-<script>
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v3.0';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-
-</script>
 
 <!-- W3.CSS Container -->
-<div class="row">
-  <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-center">
-    <div class="fb-like" data-href="https://www.facebook.com/vocalgroupallxclusive" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>
-  </div>
-
-</div>
-
-
-
-
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"></p></div>
 
 <script>
-
   //SCROLL
   $(document).ready(function(){
     // Initialize Tooltip
@@ -364,18 +343,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         });
       } // End if
     });
-  })
+  });
 
 
 
 // Script to open and close sidebar
 function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
+    // document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("mySidebar").style.widht="250px";
     document.getElementById("myOverlay").style.display = "block";
 }
 
 function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("mySidebar").style.widht="0";
     document.getElementById("myOverlay").style.display = "none";
 }
 
