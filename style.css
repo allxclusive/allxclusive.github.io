@@ -115,9 +115,21 @@ a.backgroundhover:visited{
 
 .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
+    top: -21px;
+    right: 0px;
     font-size: 60px;
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    /* color: inherit; */
+    /* background-color: inherit; */
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+
 }
 /* .backgroundhover a::hover{
   background-color: red;!important;
