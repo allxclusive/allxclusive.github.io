@@ -12,6 +12,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <!-- calendar style sheet and imports -->
+  <link rel="stylesheet" href="css/jquery.e-calendar.css">
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+  <script src="js/jquery.e-calendar.js"></script>
+
+  <!-- my own style sheet -->
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -238,8 +244,92 @@
   <div class="w3-container" id="optredens" style="margin-top:75px">
     <h1 class="w3-xxxlarge text-color-light-green"><b>Optredens</b></h1>
     <hr style="width:50px;border:5px solid" class="w3-round text-color-light-green">
+    <!-- <iframe src="https://calendar.google.com/calendar/b/1/embed?height=200&amp;wkst=2&amp;bgcolor=%23a3cb58&amp;ctz=Europe%2FAmsterdam&amp;src=djJmZGlsNHI1bjlyMzFiYjhha3J2cWp2YjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23a3cb58&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA" style="border-width:0" width="500" height="200" frameborder="0" scrolling="no" .view-container-border.background-color=%23a3cb58></iframe> -->
+    <!-- <div id="calendar">
+      <div class="c-event-body">
+        <div class="c-event-list">
+          <div class="c-event-item" data-event-day="15">
+            <div class="title">15/08 17:00  Event 1<br></div>
+            <div class="description">Description 1<br></div>
+          </div>
+          <div class="c-event-item" data-event-day="14"><div class="title">14/08 16:00  Event 2<br></div>
+          <div class="description">Description 2<br></div></div><div class="c-event-item" data-event-day="10"><div class="title">10/08 16:00  Event 3<br></div>
+          <div class="description">jQueryScript.Net<br></div></div></div></div> -->
+
+
+          <div id="calendar" class="calendar">
+            <div class="c-grid">
+              <!-- <div class="c-previous c-grid-title c-pad-top">&lt;</div>
+              <div class="c-month c-grid-title c-pad-top">August 2019</div>
+              <div class="c-next c-grid-title c-pad-top">&gt;</div>
+              <div class="c-week-day c-pad-top">Sun</div><div class="c-week-day c-pad-top">Mon</div>
+              <div class="c-week-day c-pad-top">Tue</div><div class="c-week-day c-pad-top">Wed</div>
+              <div class="c-week-day c-pad-top">Thu</div><div class="c-week-day c-pad-top">Fri</div>
+              <div class="c-week-day c-pad-top">Sat</div><div class="c-day-previous-month c-pad-top">28</div>
+              <div class="c-day-previous-month c-pad-top">29</div>
+              <div class="c-day-previous-month c-pad-top">30</div>
+              <div class="c-day-previous-month c-pad-top">31</div>
+              <div class="c-day c-pad-top">1</div>
+              <div class="c-day c-pad-top">2</div>
+              <div class="c-day c-pad-top">3</div>
+              <div class="c-day c-pad-top">4</div>
+              <div class="c-day c-pad-top">5</div>
+              <div class="c-day c-pad-top">6</div>
+              <div class="c-day c-pad-top">7</div>
+              <div class="c-day c-pad-top">8</div>
+              <div class="c-day c-pad-top">9</div>
+              <div class="c-day c-pad-top c-event" data-event-day="10">10</div>
+              <div class="c-day c-pad-top">11</div>
+              <div class="c-day c-pad-top">12</div>
+              <div class="c-day c-pad-top">13</div>
+              <div class="c-day c-pad-top c-event" data-event-day="14">14</div>
+              <div class="c-day c-pad-top c-event" data-event-day="15">15</div>
+              <div class="c-day c-pad-top">16</div>
+              <div class="c-day c-pad-top">17</div>
+              <div class="c-day c-pad-top">18</div>
+              <div class="c-day c-pad-top">19</div>
+              <div class="c-day c-pad-top">20</div>
+              <div class="c-day c-pad-top">21</div>
+              <div class="c-day c-pad-top">22</div>
+              <div class="c-day c-pad-top">23</div>
+              <div class="c-day c-pad-top">24</div>
+              <div class="c-day c-pad-top">25</div>
+              <div class="c-day c-pad-top">26</div>
+              <div class="c-day c-pad-top">27</div>
+              <div class="c-day c-pad-top">28</div>
+              <div class="c-day c-pad-top">29</div>
+              <div class="c-day c-pad-top">30</div>
+              <div class="c-day c-pad-top">31</div>
+              <div class="c-day-next-month c-pad-top">1</div>
+              <div class="c-day-next-month c-pad-top">2</div>
+              <div class="c-day-next-month c-pad-top">3</div>
+              <div class="c-day-next-month c-pad-top">4</div>
+              <div class="c-day-next-month c-pad-top">5</div>
+              <div class="c-day-next-month c-pad-top">6</div>
+              <div class="c-day-next-month c-pad-top">7</div>
+            </div> -->
+            <div class="c-event-grid">
+              <div class="c-event-title c-pad-top">Events</div>
+              <div class="c-event-body">
+                <div class="c-event-list">
+                  <div class="c-event-item" data-event-day="15">
+                    <div class="title">Zondag 7 juli 12:00 - 17:00  Struinen in de tuinen (Woerden)<br></div>
+                    <div class="description">De tuinen zijn gratis toegankelijk. We zingen 3 keer een blokje van 20 minuten.<br></div>
+                  </div><div class="c-event-item" data-event-day="14">
+                    <div class="title">7 Julie 08 16:00  Event 2<br></div>
+                    <div class="description">Description 2<br></div></div>
+                    <div class="c-event-item" data-event-day="10">
+                      <div class="title">10/08 16:00  Event 3<br></div>
+                      <div class="description">jQueryScript.Net<br></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
+
+
   </div>
-  <iframe src="https://calendar.google.com/calendar/b/1/embed?height=200&amp;wkst=2&amp;bgcolor=%23a3cb58&amp;ctz=Europe%2FAmsterdam&amp;src=djJmZGlsNHI1bjlyMzFiYjhha3J2cWp2YjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23a3cb58&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA" style="border-width:0" width="500" height="200" frameborder="0" scrolling="no" .view-container-border.background-color=%23a3cb58></iframe>
 
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
