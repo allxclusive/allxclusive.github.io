@@ -12,6 +12,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <!-- calendar style sheet and imports -->
+  <link rel="stylesheet" href="css/jquery.e-calendar.css">
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+  <!-- <script src="js/jquery.e-calendar.js"></script> -->
+
+  <!-- my own style sheet -->
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -36,6 +42,7 @@
     <a href="#repertoire" onclick="w3_close()" class="w3-bar-item backgroundhover">Repertoire</a>
     <a href="#contact" onclick="w3_close()" class="w3-bar-item backgroundhover">Contact</a>
     <a href="#optredens" onclick="w3_close()" class="w3-bar-item backgroundhover">Optredens</a>
+    <a href="#facebook" onclick="w3_close()" class="w3-bar-item backgroundhover">Facebook</a>
   </div>
 </nav>
 
@@ -230,68 +237,37 @@
         <!-- <p><span class="glyphicon glyphicon-phone"></span>+06.....</p> -->
         <p><span class="glyphicon glyphicon-envelope"></span> Email: <a class="text-color-light-green w3-hover-text-green" href="mailto:info.allxclusive@gmail.com"> info.allxclusive@gmail.com</a></p>
       </div>
-      <!-- <div class="col-md-6">
-        <div class="row">
-          <div class="col-sm-6 form-group">
-            <div class="fb-comments" data-href="https://www.facebook.com/vocalgroupallxclusive" data-numposts="5"></div>
-          </div>
 
-        </div>
-      </div> -->
     </div>
   </div>
 
-
-
-
-
-  <!-- <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-          <h2>Contact Us</h2> Got a question ? Feedback? Awesome!
-          <p>
-              Send your message in the form below and we will get back to you as early as possible.
-          </p>
-          <form role="form" method="post" id="reused_form"   >
-              <div class="form-group">
-                  <label for="name">
-                      Name:</label>
-                  <input type="text" class="form-control"
-                  id="name" name="name"  required maxlength="50">
-
+  <div class="w3-container" id="optredens" style="margin-top:75px">
+    <h1 class="w3-xxxlarge text-color-light-green"><b>Optredens</b></h1>
+    <hr style="width:50px;border:5px solid" class="w3-round text-color-light-green">
+          <div id="calendar" class="calendar">
+            <div class="c-grid">
+            <div class="c-event-grid">
+              <div class="c-event-title c-pad-top">Events</div>
+              <div class="c-event-body">
+                <div class="c-event-list">
+                  <div class="c-event-item" data-event-day="15">
+                    <div class="title">Zondag 7 juli 12:00 - 17:00  Struinen in de tuinen (Woerden)<br></div>
+                    <div class="description">De tuinen zijn gratis toegankelijk. <br> We zingen 3 keer een blokje van 20 minuten.<br></div>
+                  </div><div class="c-event-item" data-event-day="14">
+                    <div class="title">Zondag 6 oktober 14:30  Zie je zondag (Nieuwegein)<br></div>
+                    <div class="description">  "De Partner" gratis toegang  <br> Nedereindseweg 401A Nieuwegein <br></div></div>
+                    <div class="c-event-item" data-event-day="10">
+                      <!-- <div class="title">10/08 16:00  <br></div>
+                      <div class="description">jQueryScript.Net<br></div> -->
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="form-group">
-                  <label for="email">
-                      Email:</label>
-                  <input type="email" class="form-control"
-                  id="email" name="email" required maxlength="50">
-              </div>
-              <div class="form-group">
-                  <label for="name">
-                      Message:</label>
-                  <textarea class="form-control" type="textarea" name="message"
-                  id="message" placeholder="Your Message Here"
-                  maxlength="6000" rows="7"></textarea>
-              </div>
+            </div>
+    </div>
 
 
-
-
-
-              <button type="submit" class="btn btn-lg btn-success pull-right" id="btnContactUs">Post It! →</button>
-
-          </form>
-          <div id="success_message" style="width:100%; height:100%; display:none; ">
-              <h3>Sent your message successfully!</h3>
-          </div>
-          <div id="error_message"
-          style="width:100%; height:100%; display:none; ">
-              <h3>Error</h3>
-              Sorry there was an error sending your form.
-
-          </div>
-      </div>
-  </div> -->
-
+  </div>
 
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
@@ -302,14 +278,14 @@
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
 
-  <div class="w3-container" id="optredens" style="margin-top:75px">
-  <h1 class="w3-xxxlarge text-color-light-green"><b>Optredens</b></h1>
-  <hr style="width:50px;border:5px solid" class="w3-round text-color-light-green">
-  <div class="fb-page" data-href="https://www.facebook.com/vocalgroupallxclusive" data-tabs="events, timeline" data-width="750" data-height="800" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/vocalgroupallxclusive" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/vocalgroupallxclusive">All Xclusive</a></blockquote></div>
+  <div class="w3-container" id="facebook" style="margin-top:75px">
+    <h1 class="w3-xxxlarge text-color-light-green"><b>Facebook</b></h1>
+    <hr style="width:50px;border:5px solid" class="w3-round text-color-light-green">
+    <div class="fb-page" data-href="https://www.facebook.com/vocalgroupallxclusive" data-tabs="timeline, events" data-width="825" data-height="800" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/vocalgroupallxclusive" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/vocalgroupallxclusive">All Xclusive</a></blockquote></div>
+  </div>
+  <!-- facebook  -->
 </div>
 <!-- End page content -->
-</div>
-<!-- facebook  -->
 
 <br>
 
