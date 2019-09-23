@@ -137,3 +137,8 @@ a.backgroundhover:visited{
 
 
 } */
+
+.datepassed{
+    color: #ababab;
+    text-decoration: line-through;
+}
