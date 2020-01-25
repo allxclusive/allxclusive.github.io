@@ -1,0 +1,171 @@
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+.container {
+    padding: 80px 120px;
+}
+
+.person{
+  widht: 160px;
+  height: 160px;
+  border: 10px solid transparent;
+  margin-bottom: 25px;
+  width: 80%;
+  height: 80%;
+  opacity: 0.7;
+}
+.person:hover {
+  border-color: #e8e8e8;
+}
+
+.slide{
+  width:100%
+}
+
+.color-light-green{
+  background-color: #a3cb58;
+  color:white;
+}
+
+a.backgroundhover:hover{
+  background-color: #a3cb58;
+  color:white;
+}
+
+a.backgroundhover:visited{
+  background-color: #a3cb58;
+  color:white;
+}
+
+
+.color-pink{
+  background-color:#fb63a7;
+}
+.text-color-pink{
+  color:#fb63a7;
+
+}
+
+.color-dark-green{
+  background-color:#708728;
+}
+.text-color-light-green{
+  color: #a3cb58;
+}
+/* @media screen and (min-width: 992px) {
+
+.sidenav{
+  height: 100%;
+  width: 300px;
+  z-index:3
+  font-weight:bold;
+  position: fixed!important;
+  z-index: 1;
+  overflow: auto;
+}
+
+
+@media screen and (max-width: 992px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+  .sidenav {
+      height: 100%;
+      width: 0px;
+      position: fixed;
+      z-index: 31;
+      top: 0;
+      left: 0;
+
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+  }
+
+  .sidenav a {
+      padding: 8px 8px 8px 32px;
+      /* text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+      color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+  }
+  .overlay{
+    z-index: 30;
+  }
+} */
+
+.closebtn {
+    position: absolute;
+    top: -21px;
+    right: 0px;
+    font-size: 60px;
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    /* color: inherit; */
+    /* background-color: inherit; */
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+
+}
+/* .backgroundhover a::hover{
+  background-color: red;!important;
+  color: yellow;!important;
+
+
+} */
+
+.datepassed{
+    color: #ababab;
+    text-decoration: line-through;
+}
+
+
+.button {
+  background-color: #a3cb58; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #a3cb58;
+}
+
+.button1:hover {
+  background-color: #a3cb58;
+  color: white;
+}

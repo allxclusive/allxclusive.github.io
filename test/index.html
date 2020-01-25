@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AllXclusive</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <!-- calendar style sheet and imports -->
+  <link rel="stylesheet" href="css/jquery.e-calendar.css">
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+  <!-- <script src="js/jquery.e-calendar.js"></script> -->
+
+  <!-- my own style sheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+
+
+
+
+<!-- Sidebar/menu -->
+<nav class="navbar w3-sidebar color-light-green w3-collapse w3-top w3-large w3-padding" style="z-index:16;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class=" w3-hide-large closebtn backgroundhover" onclick="closeNav()" style="background-color: none;position: absolute;font-size: 60px;">&times;</a>
+  <div class="w3-container">
+    <img src="photos\Logo.png" alt="thuisconcert"style="width:250px;">
+    <!-- <h3 class="w3-padding-64"><b>AllXclusive</b></h3> -->
+  </div>
+  <div class="w3-bar-block">
+    <a href="#myPage" onclick="w3_close()" class="w3-bar-item backgroundhover">Home</a>
+    <a href="#wiezijnwij" onclick="w3_close()" class="w3-bar-item backgroundhover">Wie zijn wij</a>
+    <a href="#ietsoverons" onclick="w3_close()" class="w3-bar-item backgroundhover">Iets over ons</a>
+    <a href="#leden" onclick="w3_close()" class="w3-bar-item  backgroundhover">All X vrouwen</a>
+    <a href="#repertoire" onclick="w3_close()" class="w3-bar-item backgroundhover">Repertoire</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item backgroundhover">Contact</a>
+    <a href="#optredens" onclick="w3_close()" class="w3-bar-item backgroundhover">Optredens</a>
+    <a href="#facebook" onclick="w3_close()" class="w3-bar-item backgroundhover">Facebook</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class=" navbar w3-container w3-top w3-hide-large color-light-green w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button color-light-green w3-margin-right backgroundhover" onclick="w3_open()" style="font-size: 40px; margin-left: -17px; margin-top: -19px;color:white;">☰</a>
+  <img src="photos\Logo.png" alt="thuisconcert"style="width: 160px; margin-bottom: -40px; margin-top: -13px;">
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo "><b>All Xclusive</b></h1>
+    <!-- <h1 class="w3-xxxlarge text-color-light-green "><b>Showcase</b></h1> -->
+    <hr style="width:50px;border:5px solid" class="w3-round text-color-light-green">
+  </div>
+
+
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <!-- <li data-target="#myCarousel" data-slide-to="2"></li> -->
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="slide item active">
+          <img src="photos\slide2.jpg" alt="thuisconcert">
+          <div class="carousel-caption w3-hide-small">
+            <!-- <h3>woonkamer concert</h3>
+            <p>The atmosphere in New York is lorem ipsum.</p> -->
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="photos\slide4.jpg" alt="Los Angeles">
+          <div class="slide carousel-caption w3-hide-small">
+            <!-- <h3>LA</h3>
+            <p>Even though the traffic was a mess, we had the best time.</p> -->
+          </div>
+        </div>
+
+
+        <div class="item">
+          <img src="photos\slide3.jpg" alt="Chicago">
+          <div class="slide carousel-caption w3-hide-small">
+            <!-- <h3>een leuke kreet....</h3>
+            <p>Thank you, Chicago - A night we won't forget.</p> -->
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="wiezijnwij" style="margin-top:75px">
+    <h1 class="w3-xxxlarge text-color-light-green"><b>Wie zijn wij</b></h1>
+    <hr style="width:50px;border:5px solid" class="w3-round text-color-light-green">
+    All Xclusive is een vocal group die is opgericht in september 2017, ieder heeft al langer ervaring met meerstemmig zingen. We zijn allemaal vrouw, (XX) ieder met een eigen stemgeluid, en samen hebben wij een geheel eigen sound, “All Xclusive”
+  </div>
+
+  <div class="w3-container" id="ietsoverons" style="margin-top:75px">
+    <h1 class="w3-xxxlarge text-color-light-green"><b>Iets over ons</b></h1>
+    <hr style="width:50px;border:5px solid" class="w3-round text-color-light-green">
+    In de zomer van 2017 kwamen wij op het goede idee om samen onze eigen kleine a capella vocal group te beginnen. Als doel hebben we om muzikaal iets goed neer te zetten daarnaast zingen we met plezier en willen dat uitstralen bij onze optredens.
+  </div>
+
+  <div class="w3-container" id="tickets" style="margin-top:75px">
+    <h1 class="w3-xxxlarge text-color-light-green"><b>High Tea concert ‘Hoge Thee & Zoete Noten</b></h1>
+    <hr style="width:50px;border:5px solid" class="w3-round text-color-light-green">
+    <h3 class="text-color-light-green"><b>Over het concert</b></h3>
+    Kom ook naar ons High tea concert op zondagmiddag 5 april 2020 om 15:00 uur.
+    <br>Naast ons eigen optreden zijn er ook optredens van Friends. Wie dat zijn houden we nog even geheim, maar houd onze Facebook pagina in de gaten! Het belooft een gevarieerd programma te worden!
+    <br> Koffie, thee en lekkers zijn bij de entreeprijs inbegrepen. Overige consumpties zijn voor eigen rekening.
+    <br>De deur is open vanaf 14:30.
+    <h3 class="text-color-light-green"><b>Bestel kaarten</b></h3>
+    Kaarten zijn te koop voor € 12,50 en kun je bestellen door op de knop hieronder te klikken. Aan de deur zijn ook kaarten verkrijgbaar á € 15,00 (contante betaling).
+    <br>Neem voor eventuele vragen gerust contact met ons op via <a class="text-color-light-green w3-hover-text-green" href="mailto:info.allxclusive@gmail.com"> info.allxclusive@gmail.com</a> en je ontvangt binnen enkele dagen een reactie.
+    <br><button class="button button1">Klik hier om kaarten te bestellen</button>
+    <br><a class="text-color-light-green w3-hover-text-green" href="All_Xclusive_Privacy_policy.pdf" download> AVG-policy </a>
+
+    <h3 class="text-color-light-green"><b>Adres</b></h3>
+    <span class="glyphicon glyphicon-map-marker"></span> <a class="text-color-light-green w3-hover-text-green" href="https://www.google.com/maps/place/Heritage+Auctions+Europe/@52.011507,5.056006,16z/data=!4m5!3m4!1s0x0:0x93ff1b40250edd31!8m2!3d52.011507!4d5.056006?hl=nl">Veilinghal MPO, Heritage Auctions - Europe</a>
+    <br>Energieweg 7,
+    <br>2364 JC, IJSSELSTEIN
+    <br>Parkeren is gratis
+    <br>All Xclusive & Friends zien je graag op 5 april!
+
+  </div>
+
+  <!-- All X leden -->
+  <div class="w3-container" id="leden" style="margin-top:75px">
+    <h1 class="w3-xxxlarge text-color-light-green"><b>All X vrouwen</b></h1>
+    <hr style="width:50px;border:5px solid" class="w3-round text-color-light-green">
+  </div>
+  <!-- The Team -->
+
+<div class=" text-center ">
+  <div class="row">
+    <div class="col-sm-4 ">
+      <a href="#demo" data-toggle="collapse">
+        <img class="img-circle person" alt="Name" src="photos\Liesbeth.jpg" alt="Random Name">
+      </a>
+      <p class="text-center"><strong>Liesbeth van Rooijen</strong></p><br>
+      <div id="demo" class="collapse">
+        <p>Vocalist</p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <a href="#demo2" data-toggle="collapse">
+      <img class="img-circle person" alt="Name" src="photos\Sjanie.jpg" alt="Random Name">
+      </a>
+      <p class="text-center"><strong>Sjanie Schep</strong></p><br>
+      <div id="demo2" class="collapse">
+        <p>Vocalist</p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <a href="#demo3" data-toggle="collapse">
+      <img class="img-circle person" alt="Name" src="photos\Patricia.jpg" alt="Random Name">
+      </a>
+      <p class="text-center"><strong>Patricia Huijbregts</strong></p><br>
+      <div id="demo3" class="collapse">
+        <p>Vocalist</p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <a href="#demo4" data-toggle="collapse">
+      <img class="img-circle person" alt="Name" src="photos\Moon.jpg" alt="Random Name">
+      </a>
+      <p class="text-center"><strong>Moon Stroes</strong></p><br>
+      <div id="demo4" class="collapse">
+        <p>Vocalist</p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <a href="#demo5" data-toggle="collapse">
+      <img class="img-circle person" alt="Name" src="photos\Wopke.jpg" alt="Random Name">
+      </a>
+      <p class="text-center"><strong>Wopke Henkes</strong></p><br>
+      <div id="demo5" class="collapse">
+        <p>Vocalist</p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <a href="#demo6" data-toggle="collapse">
+      <img class="img-circle person" alt="Name" src="photos\Tries.jpg" alt="Random Name">
+      </a>
+      <p class="text-center"><strong>Patricia Huizing</strong></p><br>
+      <div id="demo6" class="collapse">
+        <p>Vocalist</p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <!-- Contact --> <div class="w3-container" id="repertoire" style="margin-top:75px">
+    <h1 class="w3-xxxlarge text-color-light-green"><b>Repertoire</b></h1>
+    <hr style="width:50px;border:5px solid" class="w3-round text-color-light-green">
+    <p>
+      We zingen lichte muziek; pop-, soul- of jazz, in het Engels en in het Nederlands.<br>Andere talen en stijlen kunnen er altijd nog bijkomen want wij willen ons repertoire blijven uitbreiden. We hebben ook al een aardig kerstrepertoire opgebouwd dus als de kersttijd er aankomt leveren wij graag onze muzikale kerstbijdrage!
+      <br><br>
+      Wil je horen hoe wij klinken? Hieronder een korte impressie.
+    </p><br>
+
+    <iframe width="50%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/818194587&color=%23a3cb58&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+  </div>
+
+
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge text-color-light-green"><b>Contact</b></h1>
+    <hr style="width:50px;border:5px solid" class="w3-round text-color-light-green">
+    <!-- <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people! -->
+    <p>Als je ons iets wilt vragen (bijvoorbeeld of wij een optreden kunnen verzorgen!) dan kan dat via de mail of op onze facebookpagina.
+      <!-- Wil je contact met ons opnemen dan kan dat door hieronder een berichtje achter te laten of te mailen naar -->
+      <!-- <a class="text-color-light-green w3-hover-text-green" href="mailto:info.allxclusive@gmail.com">info.allxclusive@gmail.com</a>. -->
+    </p>
+
+    <div class="row">
+      <div class="col-md-4">
+
+        <p><span class="glyphicon glyphicon-map-marker"></span> IJsselstein</p>
+        <!-- <p><span class="glyphicon glyphicon-phone"></span>+06.....</p> -->
+        <p><span class="glyphicon glyphicon-envelope"></span> Email: <a class="text-color-light-green w3-hover-text-green" href="mailto:info.allxclusive@gmail.com"> info.allxclusive@gmail.com</a></p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="w3-container" id="optredens" style="margin-top:75px">
+    <h1 class="w3-xxxlarge text-color-light-green"><b>Optredens</b></h1>
+    <hr style="width:50px;border:5px solid" class="w3-round text-color-light-green">
+          <div id="calendar" class="calendar">
+            <div class="c-grid">
+            <div class="c-event-grid">
+              <div class="c-event-title c-pad-top">Events</div>
+              <div class="c-event-body">
+                <div class="c-event-list">
+<!-- Events -->
+
+
+
+                  <div class="c-event-item " data-event-day="14">
+                    <div class="title">Zondag 9 Februari 2020, 12:00 - 17:00  Gluren bij de Buren (Nieuwegein)<br></div>
+                    <div class="description"> We zingen 3 keer een blokje van 20 minuten.<br>gratis toegankelijk <br> </div>
+                  </div>
+
+                  <div class="c-event-item " data-event-day="14">
+                    <div class="title">Zondag 5 april 2020 (IJsselstein)  <br></div>
+                    <div class="description"> ‘SAVE THIS DATE’ <br> </div>
+                  </div>
+
+              <!-- al geweest -->
+              <div class="c-event-item datepassed " data-event-day="15">
+                <div class="title">Woensdag 18 December, 19:00 – 21:00 uur Kaarslicht in Vreeswijk<br> (Nieuwegein)<br></div>
+                <div class="description">We zingen blokjes van 20 minuten in de Dorpstraat in Vreeswijk <br>
+                  <a class="text-color-light-green w3-hover-text-green" href="https://www.invreeswijk.nl/agenda/kaarslicht-in-vreeswijk-2019/" target="_blank">https://www.invreeswijk.nl/agenda/kaarslicht-in-vreeswijk-2019/</a> <br>
+                </div>
+              </div>
+
+              <div class="c-event-item datepassed " data-event-day="14">
+                <div class="title">Dinsdag 10 December, 16:00 – 20:00 uur WoonZorgcentra <br> Haaglanden (Den Haag) <br></div>
+                <div class="description"> Besloten<br></div>
+              </div>
+
+              <div class="c-event-item datepassed" data-event-day="15">
+                <div class="title">Zaterdag 30 November, 18:30 uur (Lage Mierde)<br></div>
+                <div class="description"> Besloten<br></div>
+              </div>
+
+              <div class="c-event-item datepassed" data-event-day="15">
+                <div class="title">Zondag 24 November tussen 10:00 en 15:00 uur <br>Country-Christmas Fair (Haarzuilens)<br></div>
+                <div class="description">Wij zingen deze middag op diverse plaatsen <br>Adres: Kasteellaan 1, 3455 RR Haarzuilens<br>
+                  Voor meer info: <a class="text-color-light-green w3-hover-text-green" href="https://www.kasteeldehaar.nl/country-christmas-fair" target="_blank">https://www.kasteeldehaar.nl/country-christmas-fair</a> <br></div>
+              </div>
+
+                  <div class="c-event-item datepassed" data-event-day="14">
+                    <div class="title">Zondag 6 Oktober, 14:30  Zie je zondag (Nieuwegein)<br></div>
+                    <div class="description">  "De Partner" gratis toegang  <br> Nedereindseweg 401A Nieuwegein <br></div>
+                  </div>
+                  <div class="c-event-item datepassed" data-event-day="14">
+                    <div class="title">Zondag 7 Juli, 12:00 - 17:00  Struinen in de tuinen (Woerden)<br></div>
+                    <div class="description">De tuinen zijn gratis toegankelijk. <br> We zingen 3 keer een blokje van 20 minuten.<br></div>
+                  </div>
+
+                    <!-- <div class="c-event-item datepassed" data-event-day="10">
+                      <div class="title">10/08 16:00  <br></div>
+                      <div class="description">jQueryScript.Net<br></div>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
+
+
+  </div>
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v3.0';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <div class="w3-container" id="facebook" style="margin-top:75px">
+    <h1 class="w3-xxxlarge text-color-light-green"><b>Facebook</b></h1>
+    <hr style="width:50px;border:5px solid" class="w3-round text-color-light-green">
+    <div class="fb-page" data-href="https://www.facebook.com/vocalgroupallxclusive" data-tabs="timeline, events" data-width="825" data-height="800" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/vocalgroupallxclusive" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/vocalgroupallxclusive">All Xclusive</a></blockquote></div>
+  </div>
+  <!-- facebook  -->
+</div>
+<!-- End page content -->
+
+<br>
+
+
+<!-- W3.CSS Container -->
+<!-- <div class="row">
+  <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+    <!-- <div class="fb-like" data-href="https://www.facebook.com/vocalgroupallxclusive" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div> -->
+  <!-- </div> -->
+
+</div>
+
+
+
+<script type="text/javascript" src="index.js"></script>
+<!-- <script type="text/javascript"src="contactform.js"></script> -->
+
+</script>
+</body>
+</html>
