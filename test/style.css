@@ -167,5 +167,6 @@ a.backgroundhover:visited{
 
 .button1:hover {
   background-color: #a3cb58;
+  border: 2px solid #a3cb58;
   color: white;
 }
