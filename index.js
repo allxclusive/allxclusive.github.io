@@ -4,7 +4,7 @@ $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
 
   // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  $(".navbar a, footer a[href='#myPage'], #eventitem").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
